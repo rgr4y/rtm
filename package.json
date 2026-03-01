@@ -1,5 +1,5 @@
 {
-  "name": "rtm",
+  "name": "readthemanual",
   "version": "0.0.1",
   "description": "Read the Manual — fast local full-text search for any project's docs",
   "main": "dist/cli.js",
