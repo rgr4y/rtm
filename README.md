@@ -11,8 +11,8 @@ Documentation lives in repos. Searching it means context-switching to a browser,
 ## Install
 
 ```bash
-git clone https://github.com/rgr4y/docs-search.git
-cd docs-search
+git clone https://github.com/rgr4y/rtm.git
+cd rtm
 npm install && npm run build
 npm link   # makes `rtm` available globally
 ```
