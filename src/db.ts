@@ -3,7 +3,7 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 
-const DEFAULT_DB_PATH = path.join(os.homedir(), ".local", "docs-search", "docs-search.db");
+const DEFAULT_DB_PATH = path.join(os.homedir(), ".local", "rtm", "rtm.db");
 
 export interface DocSection {
   id: number;

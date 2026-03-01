@@ -139,7 +139,7 @@ export async function startServer(opts: { dbPath?: string; port?: number }): Pro
   const app = createApp(db);
 
   serve({ fetch: app.fetch, port }, () => {
-    console.log(`docs-search server listening on http://localhost:${port}`);
+    console.log(`rtm server listening on http://localhost:${port}`);
     console.log(`JSON-RPC endpoint: POST http://localhost:${port}/rpc`);
   });
 }

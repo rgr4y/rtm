@@ -7,7 +7,7 @@ function isGlobalInstall(): boolean {
 }
 
 // Data always lives in user's home — it's user data, not system data
-const DATA_DIR = path.join(os.homedir(), ".local", "docs-search");
+const DATA_DIR = path.join(os.homedir(), ".local", "rtm");
 const CONFIG_PATH = path.join(DATA_DIR, "config.json");
 
 export interface SourceConfig {
@@ -85,7 +85,7 @@ export function loadConfig(): Config {
 }
 
 export function getDbPath(config: Config): string {
-  return path.join(config.dataDir, "docs-search.db");
+  return path.join(config.dataDir, "rtm.db");
 }
 
 export function getDocsDir(config: Config, sourceName: string): string {

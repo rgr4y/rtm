@@ -11,7 +11,7 @@ export async function startMcp(opts: { dbPath?: string }): Promise<void> {
   const db = openDb(dbPath);
 
   const server = new McpServer({
-    name: "docs-search",
+    name: "rtm",
     version: "0.0.1",
   });
 
@@ -120,5 +120,5 @@ export async function startMcp(opts: { dbPath?: string }): Promise<void> {
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("docs-search MCP server running on stdio");
+  console.error("rtm MCP server running on stdio");
 }

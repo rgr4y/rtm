@@ -1,10 +1,10 @@
 {
-  "name": "docs-search",
+  "name": "rtm",
   "version": "0.0.1",
-  "description": "",
+  "description": "Read the Manual — fast local full-text search for any project's docs",
   "main": "dist/cli.js",
   "bin": {
-    "docs-search": "dist/cli.js"
+    "rtm": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc",

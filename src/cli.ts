@@ -16,8 +16,8 @@ const defaultDb = getDbPath(config);
 const program = new Command();
 
 program
-  .name("docs-search")
-  .description("SQLite FTS5 search tool for documentation")
+  .name("rtm")
+  .description("Read the Manual — fast local full-text search for documentation")
   .version("0.0.1");
 
 program
@@ -165,7 +165,7 @@ program
   .action((name, repo, opts) => {
     addSource({ name, repo, branch: opts.branch, docsPrefix: opts.prefix });
     console.log(`Added source "${name}" → ${repo}@${opts.branch} (prefix: ${opts.prefix})`);
-    console.log(`Run \`docs-search ingest -s ${name}\` to index it.`);
+    console.log(`Run \`rtm ingest -s ${name}\` to index it.`);
   });
 
 program
